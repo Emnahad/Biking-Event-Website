@@ -1,0 +1,139 @@
+
+img {
+    margin-top: -10px;
+    width: 80px;
+
+}
+
+
+body::before {
+    content: "";
+    background: url(Images/Bikefest/2.0.1.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #0a0c68, #002f81, #004c95, #0068a4, #3084b0, #4e95b9, #69a6c2, #84b7cc, #95c3d6, #a6cfdf, #b7dbe9, #c8e7f3);
+    font-family: Montserrat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    max-height: 590px;
+    background: #0b3352;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #ffffff;
+    font-size: 35px;
+    width: 762px;
+    background-color: #205e88;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.formreg:nth-child(2n){
+    justify-content: end;
+}
+
+.formreg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    padding-bottom: 15px;
+}
+
+.formreg label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.formreg input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #205e88;
+    padding: 0 10px;
+}
+
+.bii{
+display: flex;
+justify-content: space-around;
+}
+
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+button{
+    font-size: 25px;
+    margin-top: -50px;
+    margin-left: 200px;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #6fbff5;
+    color: #ffffff;
+    border: 2px solid white;
+    }
+
+.form-submit-btn button:hover{
+    background-color: #205e88;
+    color: #6fbff5;
+    border-radius: 5px;
+    border: 1px solid #6fbff5;
+}

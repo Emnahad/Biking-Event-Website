@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form Bike'Fest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://kit.fontawesome.com/04a8b09c28.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="stylesreg.css" />
+  </head>
+  <body>
+    <div class="container" data-aos="fade-up">
+        <div class="logo">
+            <a href="index.html"><img src="Images/logo.png" alt=""></a>
+        </div>
+      <h1 class="form-title">Register for Bike'Fest Now!</h1>
+      <form action="#">
+        <div class="info">
+          <div class="formreg">
+            <label for="fullName">Full Name 1</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="formreg">
+            <label for="fullName">Full Name 2</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="formreg">
+            <label for="email">Email 1</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="formreg">
+            <label for="email">Email 2</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="formreg">
+            <label for="phone number">Phone number 1</label>
+            <input type="phone number"
+                    id="phone number"
+                    name="phone number"
+                    placeholder="Enter phone number"/>
+          </div>
+          <div class="formreg">
+            <label for="phone number">Phone number 2</label>
+            <input type="phone number"
+                    id="phone number"
+                    name="phone number"
+                    placeholder="Enter phone number"/>
+          </div>
+        </div>
+        <div class="bii">
+            <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                  <input type="radio" name="gender" id="male">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female">
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="gender-details-box">
+                  <span class="gender-title">Gender</span>
+                  <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                  </div>
+                </div>
+        </div>
+        
+        <div class="form-submit-btn">
+          <a href="index.html"><button>Register</button></a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      AOS.init({
+          duration: 900,
+          offset: 100,
+      });
+  </script>
+
+  </body>
+</html>
