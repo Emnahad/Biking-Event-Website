@@ -9,8 +9,8 @@ Bike'Fest is an annual event hosted at SUP'COM, featuring a captivating duathlon
 
 ## Features
 1. **Dynamic Duathlon Interface**
-   - ![Welcome Page](C:\Users\ideapad\Desktop\Web Projects\Github images)
-   - Experience the thrill of the duathlon with our dynamic and engaging interface.
+   - ![Welcome Page](Images/Readme/bikefest1)
+   - Video on Welcome Page.
 
 ## How to Use
 1. Clone the repository.
