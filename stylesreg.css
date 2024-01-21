@@ -1,139 +1,151 @@
-
-img {
-    margin-top: -10px;
-    width: 80px;
-
-}
-
-
-body::before {
-    content: "";
-    background: url(Images/Bikefest/2.0.1.jpg);
-    background-size: cover;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
 body {
-    background-image: linear-gradient(to right bottom, #0a0c68, #002f81, #004c95, #0068a4, #3084b0, #4e95b9, #69a6c2, #84b7cc, #95c3d6, #a6cfdf, #b7dbe9, #c8e7f3);
+    margin: 0;
+    padding: 0;
     font-family: Montserrat;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
+    background: linear-gradient(to right bottom, #0a0c68, #002f81, #004c95, #0068a4, #3084b0, #4e95b9, #69a6c2, #84b7cc, #95c3d6, #a6cfdf, #b7dbe9, #c8e7f3);
 }
 
-.container{
+#registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85.6vh;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.participants{
+display: flex;
+}
+
+.participant1 {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 20px;
     width: 80%;
     max-width: 600px;
-    max-height: 590px;
-    background: #0b3352;
-    padding: 28px;
-    margin: 0 28px;
+}
+
+.participant2 {
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    padding: 20px;
+    margin: 20px 20px;
+    width: 80%;
+    max-width: 600px;
 }
 
-.form-title{
-    font-size: 26px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 6px;
-    color: #ffffff;
-    font-size: 35px;
-    width: 762px;
-    background-color: #205e88;
-    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+.inputbox {
+    margin-bottom: 20px;
+}
+
+.inputbox span {
+    font-size: 14px;
+    color: #333;
+}
+
+input,
+select {
+    width: 85%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%;
 }
 
-.info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
+.row100 {
+    margin-top: 20px;
 }
 
-.formreg:nth-child(2n){
-    justify-content: end;
-}
-
-.formreg{
-    display: flex;
-    flex-wrap: wrap;
-    width: 48%;
-    padding-bottom: 15px;
-}
-
-.formreg label{
-    width: 95%;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 5px 0;
-}
-
-.formreg input{
-    height: 40px;
-    width: 95%;
-    border-radius: 7px;
-    outline: none;
-    border: 1px solid #205e88;
-    padding: 0 10px;
-}
-
-.bii{
-display: flex;
-justify-content: space-around;
-}
-
-.gender-title{
-    color:white;
-    font-size: 24px;
-    font-weight: 600;
-    border-bottom: 1px solid white;
-}
-
-.gender-category{
-    margin: 15px 0;
-    color: white;
-}
-
-.gender-category label{
-    padding: 0 20px 0 5px;
-}
-
-.gender-category label,
-.gender-category input,
-.form-submit-btn input{
+.inputbox input[type="submit"] {
+    margin-left: 165px;
+    width: 50%;
+    background: linear-gradient(to right bottom, #0a0c68, #002f81, #004c95, #0068a4, #3084b0, #4e95b9, #69a6c2, #84b7cc, #95c3d6, #a6cfdf, #b7dbe9, #c8e7f3);
+    color: #fff;
     cursor: pointer;
 }
 
-.form-submit-btn{
-    margin-top: 40px;
+.inputbox input[type="submit"]:hover {
+    background: #004c95;
 }
 
-button{
-    font-size: 25px;
-    margin-top: -50px;
-    margin-left: 200px;
-    width: 200px;
-    height: 50px;
-    border-radius: 3px;
-    background-color: #6fbff5;
-    color: #ffffff;
-    border: 2px solid white;
-    }
 
-.form-submit-btn button:hover{
-    background-color: #205e88;
-    color: #6fbff5;
-    border-radius: 5px;
-    border: 1px solid #6fbff5;
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+.social-media {
+    display: flex;
+    justify-content: end;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin-right: 129px;
+    padding: 0;
+    margin-top: 19px;
+}
+
+.social-media a:hover {
+    color: #84b7cc;
+}
+
+.icon {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin: 15px 10px;
+    line-height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+
+.icon a {
+    color: #fff;
+}
+
+footer {
+    font: 200 14px 'Oswald', sans-serif;
+    color: rgb(255, 248, 248);
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    background-color: #0068a4;
+}
+
+.identity img {
+    width: 10rem;
+    height: 6rem;
+    margin-left: 35px;
+}
+
+.identity {
+    display: flex;
+}
+
+.slogon {
+    margin-top: 40px;
+    width: 501px;
+    font-size: 20px;
+    margin-left: 232px;
+    font-weight: 100px;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: -15px;
+    padding-top: 3px;
+    background-color: #6fbff5;
 }
