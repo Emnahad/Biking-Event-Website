@@ -1,97 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Registration Form Bike'Fest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script src="https://kit.fontawesome.com/04a8b09c28.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <link rel="stylesheet" href="stylesreg.css" />
-  </head>
-  <body>
-    <div class="container" data-aos="fade-up">
-        <div class="logo">
-            <a href="index.html"><img src="Images/logo.png" alt=""></a>
-        </div>
-      <h1 class="form-title">Register for Bike'Fest Now!</h1>
-      <form action="#">
-        <div class="info">
-          <div class="formreg">
-            <label for="fullName">Full Name 1</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter Full Name"/>
-          </div>
-          <div class="formreg">
-            <label for="fullName">Full Name 2</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter Full Name"/>
-          </div>
-          <div class="formreg">
-            <label for="email">Email 1</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"/>
-          </div>
-          <div class="formreg">
-            <label for="email">Email 2</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"/>
-          </div>
-          <div class="formreg">
-            <label for="phone number">Phone number 1</label>
-            <input type="phone number"
-                    id="phone number"
-                    name="phone number"
-                    placeholder="Enter phone number"/>
-          </div>
-          <div class="formreg">
-            <label for="phone number">Phone number 2</label>
-            <input type="phone number"
-                    id="phone number"
-                    name="phone number"
-                    placeholder="Enter phone number"/>
-          </div>
-        </div>
-        <div class="bii">
-            <div class="gender-details-box">
-                <span class="gender-title">Gender</span>
-                <div class="gender-category">
-                  <input type="radio" name="gender" id="male">
-                  <label for="male">Male</label>
-                  <input type="radio" name="gender" id="female">
-                  <label for="female">Female</label>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Bike'Fest</title>
+    <link rel="stylesheet" href="stylesreg.css"> 
+</head>
+<body>
+    <section id="registration">
+        <h1 class="title" data-aos="fade-up">Register for Bike'Fest</h1>
+        <form action="registration_process.php" method="post">
+            <div class="participants">
+              <div class="participant1" data-aos="fade-up">
+                <h2>Participant 1</h2>
+                <div class="inputbox">
+                    <span>Full Name</span>
+                    <input type="text" name="fullname1" placeholder="Your full name" required>
                 </div>
+                <div class="inputbox">
+                    <span>Age</span>
+                    <input type="number" name="age1" placeholder="Your age" required>
+                </div>
+                <div class="inputbox">
+                    <span>Gender</span>
+                    <select name="gender1" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="participant2" data-aos="fade-up">
+                <h2>Participant 2</h2>
+                <div class="inputbox">
+                    <span>Full Name</span>
+                    <input type="text" name="fullname2" placeholder="Your full name" required>
+                </div>
+                <div class="inputbox">
+                    <span>Age</span>
+                    <input type="number" name="age2" placeholder="Your age" required>
+                </div>
+                <div class="inputbox">
+                    <span>Gender</span>
+                    <select name="gender2" required>
+                        <option value="male">Female</option>
+                        <option value="female">Male</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+
+            <div class="row100">
+                <div class="inputbox">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+      <div class="contact-container">
+          <div class="identity">
+              <div class="ip">
+                  <img src="Images/logo.png">
               </div>
-              <div class="gender-details-box">
-                  <span class="gender-title">Gender</span>
-                  <div class="gender-category">
-                    <input type="radio" name="gender" id="male">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female">
-                    <label for="female">Female</label>
-                  </div>
-                </div>
-        </div>
-        
-        <div class="form-submit-btn">
-          <a href="index.html"><button>Register</button></a>
-        </div>
-      </form>
-    </div>
-
-    <script>
-      AOS.init({
-          duration: 900,
-          offset: 100,
-      });
-  </script>
-
-  </body>
+              <h5 class="slogon">Ride as One, Thrill as Team: Bike'Fest 2gether!</h5>
+          </div>
+          <div class="social-media">
+              <div class="icon">
+                  <a href="" target="_blank" class="contact-icon">
+                      <i class="fab fa-linkedin"></i></a>
+              </div>
+              <div class="icon">
+                  <a href="https://www.facebook.com/SUPBIKE29" target="_blank" class="contact-icon">
+                      <i class="fab fa-facebook"></i></a>
+              </div>
+              <div class="icon">
+                  <a href="#" target="_blank" class="contact-icon"><i class="fab fa-twitter"></i></a>
+              </div>
+ 
+          </div>
+      </div>
+      <div class="copyright">&copy;Bike'Fest 2023 | Welcome to our event</div>
+  </footer>
+</body>
 </html>
