@@ -14,8 +14,8 @@ Bike'Fest is an annual event hosted at SUP'COM, featuring a captivating duathlon
 ### About the event section
 ![About](Images/Readme/bikefest3.png)
 ### Previous editions
+Hovering a card will give you information about the edition.
 ![Previous Ed](Images/Readme/bikefest4.png)
-####Hovering a card will give you information about the edition.
 ![Previous Editions](Images/Readme/bikefest5.png)
 ### Program
 ![Program](Images/Readme/bikefest6.png)
